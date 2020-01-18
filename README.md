@@ -1,6 +1,7 @@
 # Docker
 
 ### 첫번째 도커 특강 1월 8일 cmd 실습 
+실행 명령어 : docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
 
 ```
 C:\Users\hsjang\WebstormProjects\jihye\vuetest>docker version
