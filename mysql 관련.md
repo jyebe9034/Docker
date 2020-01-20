@@ -1,4 +1,4 @@
-### cmd창을 열어 아래와 같이 진행하면 됨. 
+### image를 띄워서 실행할 때 
 
 ```
 C:\Users\jihye>docker images
@@ -20,4 +20,14 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
 5a2ad1aa6054        mysql               "docker-entrypoint.s…"   17 hours ago        Up 17 hours         0.0.0.0:3306->3306/tcp, 33060/tcp   mysql_test
 
 C:\Users\jihye>
+```
+
+### stop 상태인 container를 실행할 때
+```
+C:\Users\jihye>docker ps -a
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                        PORTS                               NAMES
+ef798c9da809        mysql               "docker-entrypoint.s…"   2 days ago          Exited (255) 28 minutes ago   0.0.0.0:3306->3306/tcp, 33060/tcp   mysql
+
+C:\Users\jihye>docker container start mysql // docker container start [컨테이너 이름]
+mysql
 ```
